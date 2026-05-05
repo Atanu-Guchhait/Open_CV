@@ -7,7 +7,7 @@ if image is None:
     print("Image Not Loaded")
 
 else:
-    w, h = image.shape[:2]
+    h, w = image.shape[:2]
 
     center = (w//2, h//2)
     M = cv2.getRotationMatrix2D(center, 90, 1.0)
